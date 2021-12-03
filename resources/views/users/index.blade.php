@@ -114,6 +114,9 @@
             </div>
           </div>
           <div class="modal-footer">
+            @if (Auth::user()->type == '0')
+            <a href="{{ route('user.edit', $user->id)}}" class="btn btn-primary">Edit</a>
+            @endif
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
           </div>
         </div>

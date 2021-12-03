@@ -45,15 +45,23 @@
       <div class="form-group row align-items-center">
         <label for="type" class="col-md-4 text-md-right">Type <span class="text-danger">*</span></label>
           <div class="col-md-6">
+            @if ($user['type'] == '0')
             <div class="input-group">
               <div class="input-group-prepend">
                 <span class="input-group-text"><i class="fas fa-user-alt"></i></span>
               </div>
-              <select class="form-control" id="type" name="type" {{($user->type == '1') ? 'disabled' : ''}}>
+              
+              
+              <select class="form-control" id="type" name="type">
                 <option value="0" {{($user->type == '0') ? 'selected' : ''}}>Admin</option>
                 <option value="1" {{($user->type == '1') ? 'selected' : ''}}>User</option>
               </select>
             </div>
+            @endif
+            @if ($user['type'] == '1')
+            <input id="type" type="hidden" class="form-control" name="type" value="{{ $user['type'] }}">
+              <p class="font-weight-bold">User</p>
+            @endif
           </div>
       </div>
       <div class="form-group row align-items-center">
