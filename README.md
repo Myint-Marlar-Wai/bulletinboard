@@ -60,7 +60,6 @@ Password : M@rlar12345
 - [Posts](#Posts)
   - Admin Role(Can manage the all posts)
   - User Role(Can manage only my post)
-
 -  [User Profile](#Profile)
   - Admin Role(Can manage all user profile)
   - User Role(Can manage only my profile)
@@ -68,13 +67,13 @@ Password : M@rlar12345
 
 ## Users
 
-![Users Pages](./public/images/readme/users.png)
+![Users Pages](./public/image/readme/users.png)
 
 ## Posts
 
-![Posts Pages](./public/images/readme/posts.png)
+![Posts Pages](./public/image/readme/posts.png)
 
 ## Profile
 
-![Profile](./public/images/readme/profile.png)
+![Profile](./public/image/readme/profile.png)
 
